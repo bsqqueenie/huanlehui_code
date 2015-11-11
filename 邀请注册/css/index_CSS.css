@@ -1,0 +1,237 @@
+@import url("reset.css");
+@media only screen and (max-width: 369px) {
+	html {
+		font-size: 87.5%;
+	}
+}
+@media only screen and (min-width: 370px) and (max-width: 429px) {
+	html {
+		font-size: 100%;
+	}
+}
+@media only screen and (min-width: 430px) and (max-width: 499px) {
+	html {
+		font-size: 112.5%;
+	}
+}
+@media only screen and (min-width: 430px) and (max-width: 640px) {
+	html {
+		font-size: 112.5%;
+		.spcen{
+			top:45%;
+		}
+	}
+}
+@media only screen and (min-width: 500px) and (max-width: 569px) {
+	html {
+		font-size: 125%;
+	}
+}
+@media only screen and (min-width: 570px) and (max-width: 639px) {
+	html {
+		font-size: 143.8%;
+	}
+}
+@media only screen and (min-width: 640px) and (max-width: 719px) {
+	html {
+		font-size: 150%;
+	}
+}
+@media only screen and (min-width: 720px) {
+	html {
+		font-size: 150%;
+	}
+}
+/*.clear {
+	clear: both;
+}*/
+
+body,html {
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	position: relative;
+}
+.container {
+	overflow-x: hidden;
+	max-width: 640px;
+	min-width: 320px;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	/*background: #f4f4f4;*/
+	background-color: rgb(248,175,60);
+}
+.slogan{
+	height: 30%;
+	width: 100%;
+	background: url(../img/shareFriendview.png) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+}
+.slogan_bg{
+	width: 70%;
+	height: 100%;
+	background: url(../img/shareFriendslogan.png) no-repeat center center;
+	background-size: 100% 80%;
+	margin: auto;
+	margin-top:5%; 
+ 
+}
+.popup_container{
+		position: relative;
+/*		position: relative;*/
+		z-index: 1;
+		width:95%;
+	    overflow: hidden;
+	    margin: 55% auto; 
+	 
+		
+}
+.popup{
+	width: 90%;
+	-webkit-box-pack: justify;   /*自动分配*/
+	box-sizing: border-box;    /*内填充*/
+	padding: 1rem 1rem;
+	border-radius: 5px;
+	background-color: white;
+	margin:  auto;
+}
+.confirm{
+  margin-top:10%;
+  border-radius: 5px;
+  background-color: rgb(227, 59, 78);
+  box-shadow: 0px 2px 0px 0px rgba(218, 0, 25, 0.004);
+  width: 100%;
+  height:45px;
+  color: rgb(254, 254, 254);
+  text-align: center;
+  line-height:45px;
+  margin: auto;
+}
+.footer{
+    background:  url(../img/shareFriendfooter.png) repeat-x scroll 0;
+    height: 6rem;
+    width:100%;
+	position:absolute;	
+	bottom:0;
+	left:0;
+}
+ 
+
+
+.foot_bar{
+	width: 100%;
+	position: fixed;
+	height: 64px;
+    background: rgba(0, 0, 0,0.502); 
+	z-index: 999999;
+	bottom:0;
+	left:0;
+}
+.mini_download{
+
+border-radius: 5px;
+background: #E33B4E none repeat scroll 0% 0%;
+position: absolute;
+right: 40px;
+top: 18px;
+width: 70px;
+height: 34px;
+text-align: center;
+line-height: 34px;
+color: #FFF;
+z-index: 9999999;
+font-size: 16px;
+
+}
+ .left_part{
+
+position: absolute;
+left: 15px;
+top: 18px;
+width: 75%;	
+}
+.tip{
+    color: #999999;
+    font-size: 12px;
+/*    margin-left: 10%;
+*/    margin:2% 0 2% 10%;
+}
+.telephone{ 
+    width: 60px;
+	display: inline-block;
+}
+li{
+	background-color: #f2f2f2;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	padding: 0 .5rem;
+	height: 40px;
+	line-height: 40px;
+}
+ul li input{
+	border: none;
+    -webkit-appearance: none;
+    height: 20px;
+    background: transparent;
+    font-size: 12px;
+    color: #455966;
+
+}
+.w60 {
+    width: 60px;
+}
+.ilb {
+    display: inline-block;
+}
+.w35p {
+    width: 35%;
+}
+.send-vCode {
+    background: #fff;
+    border: 1px solid #e33b4e;
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #e33b4e;
+    display: inline-block;
+}
+.ml5 {
+    /*margin-left: 5px;*/
+   
+}
+.mt4 {
+    margin-top: 4px;
+}
+.fr {
+    float: right;
+
+}
+.btn_preserve {
+    border: 1px solid #e33b4e;
+    background: #e33b4e;
+    color: #FFF;
+}
+.btn_cancel, .btn_preserve {
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 16px;
+}
+.mb20 {
+    margin-bottom: 10px;
+}
+.mt20 {
+    margin-top: 10px;
+}
+.tc {
+    text-align: center;
+}
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/index_CSS.css"/>-->
+		<!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/cssone.css"/>
+ </style>
+<script type="text/javascript" src="${ctx}/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="${ctx}/js/plugin/formValidator/formValidator-4.1.3.js" charset="UTF-8"></script>
+<script type="text/javascript" src="${ctx}/js/plugin/formValidator/formValidatorRegex.js" charset="UTF-8"></script>
+<script type="text/javascript">
+	//手机号码校验
+	function checkMobile(){
+		
+		window.onload = window.onresize = function(){
+    pageResponse({
+        selectors: '.cpopup',     //模块的类名，使用class来控制页面上的模块(1个或多个)
+        mode : 'contain',     // auto || contain || cover 
+        width : '640',      //输入页面的宽度，只支持输入数值，默认宽度为320px
+        height : '1008'      //输入页面的高度，只支持输入数值，默认高度为504px
+    })
+}
+		var msg = "";
+		var mobile= $("#mobile").val(); 
+		if(mobile == ""){
+			msg = "手机号不能为空";
+		} 
+		var regAddr = new RegExp('^(((13[0-9]{1})|(14[5|7]{1})|(15[0|1|2|3|5|6|7|8|9]{1})|(17[6|7|8]{1})|(18[0-9]{1}))+\\d{8})$'); //手机号正则表达式
+	    if(!regAddr.test(mobile)){
+	    	msg = "手机号格式无效";
+		}
+		if(msg == ""){
+			jQuery.ajax({
+				type : "GET",
+				url : "${ctx}/share/shareFriendSendMobile",
+				data : "mobile=" + $("#mobile").val() + "&t="+new Date().getTime(),
+				dataType : 'json',
+				async : false,
+				contentType : "application/x-www-form-urlencoded; charset=UTF-8",//乱码解决
+				success : function(data) {
+					if(data.result.code != '1000'){
+						msg = data.result.msg;
+					}
+				}
+			});
+		}
+		
+		if(msg != ""){
+			document.getElementById("mobileTip").innerHTML = "<font style='color: red; font-size: 12px; display: inline-block; margin-top: -4%; margin-left: 12%;'  >"+msg+"</font>";
+			return false;
+		}else{
+			document.getElementById("mobileTip").innerHTML ="";
+			return true;
+		}
+	
+	}
+	//密码校验
+	function checkPwd(){
+		var msg = "";
+		var pwd=document.getElementById("pwd").value;
+		if(pwd == ""){
+			msg = "密码不能为空";
+		}else if(pwd.length < 6 || pwd.length > 20){
+			msg = "密码必须为6-20位有效字符";
+		}
+		if(msg !=""){//msg不为空则有验证失败项
+			document.getElementById("pwdTip").innerHTML="<font style='color: red; font-size: 12px; display: inline-block; margin-top: -4%; margin-left: 12%;  display: -webkit-box;'   >"+msg+"</font>";
+			return false;
+		}else{
+			document.getElementById("pwdTip").innerHTML="";
+			return true;
+		}
+	}
+	//确认密码校验
+	function checkConfirmPwd(){
+		var pwd=document.getElementById("pwd").value;
+		var pwd1=document.getElementById("confirmPwd").value;
+		if(pwd1=="" || pwd==""  || pwd1 != pwd){
+			document.getElementById("confirmPwdTip").innerHTML="<font style='color: red; font-size: 12px; display: inline-block; margin-top: -4%;; margin-left: 12%; display: -webkit-box;'  >两次输入的密码不同，请重新输入</font>";
+			return false;
+		}else{
+			document.getElementById("confirmPwdTip").innerHTML="";
+			return true;
+		}
+	}
+	
+		
+	//验证码校验
+	function SendValidaMsg(obj) {
+		var mobile= $("#mobile").val();  
+		//发送验证码前先校验手机号码密码的有效性
+		
+	    if(checkMobile() && checkPwd() && checkConfirmPwd()){
+			jQuery.ajax({
+				type : "GET",
+				url : "${ctx}/share/shareFriendSendValidaMsg",
+				data : "mobile=" + $("#mobile").val() + "&type=regist&t="+new Date().getTime(),
+				dataType : 'json',
+				async : false,
+				contentType : "application/x-www-form-urlencoded; charset=UTF-8",//乱码解决
+				success : function(data) {
+					alert(data.result.msg);
+					if(data.result.code == 1000){
+						document.getElementById("verifyNumTip").value="";
+						settime(obj);
+					}
+				}
+			});
+		}else{
+			alert("手机号或密码验证未通过");
+			return false;
+			
+		}
+	}
+	
+	var countdown=60; 
+	function settime(obj) { 
+	    if (countdown == 0) { 
+	        obj.removeAttribute("disabled");    
+	        obj.value="获取验证码"; 
+	        countdown = 60; 
+	        return;
+	    } else { 
+	        obj.setAttribute("disabled", true); 
+	        obj.value="重新发送(" + countdown + ")"; 
+	        countdown--; 
+	    } 
+	setTimeout(function() { 
+	    settime(obj) }
+	    ,1000) 
+	}
+	//注册
+	function register() {
+		
+		var code = document.getElementById("Trancode").value;
+		if(checkMobile() && checkPwd() && checkConfirmPwd()){
+			var regCode = new RegExp('^\\d{6}$');
+			if(code=="" || !regCode.test(code)){
+				alert("验证码输入错误!");
+				return;
+			}
+			jQuery.ajax({
+				type : "GET",
+				url : "${ctx}/share/shareFriendValidMsgCode",
+				data : "mobile=" + $("#mobile").val() + "&code="+$("#Trancode").val()+"&t="+new Date().getTime(),
+				dataType : 'json',
+				async : false,
+				contentType : "application/x-www-form-urlencoded; charset=UTF-8",//乱码解决
+				success : function(data) {
+					if(data.result.code == 1000){
+						jQuery.ajax({
+							type : "GET",
+							url : "${ctx}/share/shareFriendAddMember",
+							data : "mobile=" + $("#mobile").val() +"&isTask="+$("#isTask").val()+ "&code="+$("#Trancode").val()+"&t="+new Date().getTime()+"&Trancode="+$("#invitationCodeId").val()+"&pwd="+$("#pwd").val(),
+							dataType : 'json',
+							async : false,
+							contentType : "application/x-www-form-urlencoded; charset=UTF-8",//乱码解决
+							success : function(data) {
+								if(data.result.code == 1000){
+									location.href="${ctx}/share/shareFriendDownload";
+								}else{
+									alert(data.result.msg);
+								}
+							}
+						});
+					}else{
+						alert(data.result.msg);
+					}
+				}
+			});
+		}else{
+			alert("输入验证未通过！");
+		}
+		
+
+	}
+</script>
+		<style type="text/css">
+ 
+			input{
+				background-color: #f2f2f2;
+				border: medium none;   
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+				<div class=" popup_container" >
+					<div class="popup">
+											<ul>
+					<input type="hidden" name="isTask" id="isTask" value="${isTask}">
+					<input type="hidden" name="code" id="code" value="${token}">
+					<li>
+						<span class="ilb w60">手机号</span>
+						<input id="mobile" class="telephone" type="text" placeholder="请输入手机号" maxlength="11" onBlur="checkMobile();" style="width: 70%;" />
+					</li>
+					<span class="countdown" id="mobileTip"></span>
+					<li>
+						<span class="ilb w60">密码</span>
+						<input id="pwd" class="w75p" type="password" placeholder="建议6-18位字母与数字组合"  maxlength="20" onBlur="checkPwd();" style="width: 70%;">
+					</li>
+					<span class="countdown" id="pwdTip"></span>
+					<li>
+						<span class="ilb w60">确认密码</span>
+						<input id="confirmPwd" class="w75p" type="password" placeholder="请再次输入密码" onBlur="checkConfirmPwd();" style="width: 70%;">
+					</li>
+					<span class="countdown" id="confirmPwdTip"></span>
+					<li>
+						<span class="ilb w60">邀请码</span>
+						<input  name="invitationCode" id="invitationCodeId" class="w75p" type="text" value="${invitationCode}" disabled="disabled" style="width: 70%;">
+					</li>
+					<li style="width: 63%;float: left;">
+						<span class="ilb w60">验证码</span>
+						<input id="Trancode" placeholder="短信验证码" class="w35p" type="text">
+					</li>
+					<input type="button" id="btnSendMsgCode" class="send-vCode fr mt4 ml5" onClick="SendValidaMsg(this);" value="获取验证码" style="-webkit-appearance: none;">
+					<span class="countdown" id="verifyNumTip"></span>
+				</ul>	
+				<div class="pd10 mt20 mb20 tc">
+				<button onClick="register();" class="btn_preserve">立即注册</button>
+						</div>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>
