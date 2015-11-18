@@ -188,7 +188,7 @@ html {
 }
 .progress_bar_one{
 	width: 70%;
-	height: 10px;	
+	height: 4px;	
 	background: #B3B3B3;
 	border-radius:5px;	
 	overflow: hidden;
@@ -390,6 +390,7 @@ position: absolute;
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 1;
 }
 .num {
 	width: 20%;
@@ -780,6 +781,7 @@ margin-left: 1.5rem;
  			background-color: #ffffff;
  			border-bottom: 1px solid #d9d9d9;
  			display: -webkit-box;
+ 			margin-bottom: .5rem;
  		}
  		.ann dl{
  			width: 100%;
@@ -830,10 +832,10 @@ margin-left: 1.5rem;
  		
  		
  			.annm dt{
- 			width: 36%;	
+ 			width: 110px;	
  		}
  		.annm dd{
- 			width: 61%;
+ 			width: 64%;
  		position: relative;
  		}
  		.annm dd .dd_top h3
@@ -842,6 +844,10 @@ margin-left: 1.5rem;
  		}
  		.annm dd .dd_top {
  			padding-bottom: 1rem;
+
+ 		}
+ 		.annm dd .dd_top p,span{
+ 			font-size: 10px;
  		}
 
  		.annm dd .dd_bottom{
@@ -898,7 +904,7 @@ margin-left: 1.5rem;
  			background-color: #fd3760;
  			border-radius:5px;
  			right: 0;
- 			top: 2.8rem;
+ 			top: 3.6rem;
  			color: white;
  			font-size: 14px;
  			text-align: center;
@@ -916,9 +922,17 @@ margin-left: 1.5rem;
  			right: 1rem;
  			top: 12%;
  		}
+ 		.time_cont_center_one p
+ 		{
+ 			overflow: hidden;
+ 			text-overflow:ellipsis;
+ 			white-space: nowrap;
+ 		}
   @import #outime h2{color: #fff; font-size: 16px; text-align: center; line-height: 4rem;position: absolute; left: 33%;}
     	em {
     		display: none;
     		padding-left: 5px;
     	}
     	#time-2 .times{font-size: 20px;}
+
+
