@@ -268,6 +268,9 @@ html {
 }
 .sizeiph span {
 	padding-left: 5px;
+	font-size: 18px;
+	font-weight: bold;
+
 }
 /*.sizeiph span img {
 	width: 3.5rem;
@@ -291,7 +294,7 @@ position: absolute;
 	margin: 1px 0.8px;*/
     position: absolute;
     left: 60px;
-    top: 35%;
+    top: 29%;
     width: 76%;
     overflow: hidden; 
     text-overflow: ellipsis; 
@@ -327,6 +330,31 @@ position: absolute;
 	-webkit-box-pack: justify;
 	font-size: 10px;
 }
+.content_box1 .cont_box_one {
+	width: 100%;
+	display: -webkit-box;
+	font-size: 10px;
+}
+.cont_box_one p span {
+	font-size: 10px;
+	color: #aaa;
+}
+.cont_box_one .spanone{
+	font-size: 10px;
+	color: #aaa;
+	padding-right: 2rem;
+}
+.cont_box_one p {
+	font-size: 10px;
+	color: #aaa;
+	padding: 5px;
+}
+.cont_box_one .onep {
+	font-size: 10px;
+	color: #aaa;
+	padding: 5px 0 0 0;
+	width: 75%
+}
 .cont_box p span {
 	font-size: 10px;
 	color: #aaa;
@@ -339,7 +367,7 @@ position: absolute;
 .cont_box p {
 	font-size: 10px;
 	color: #aaa;
-	padding: 5px;
+	padding: 0 5px;
 }
 .content_box2 {
 	width: 100%;
@@ -654,6 +682,7 @@ margin-left: 1.5rem;
 		font-size: 16px;
 	}
 		#time-1 {
+
     		width: 100%;
     		height: auto;
     		overflow: hidden;
@@ -731,7 +760,7 @@ margin-left: 1.5rem;
 			float: left;
 			line-height: 3.3rem;
 			width:60%;
-			padding-left: 20px;
+			padding-left: 27px;
 		}
 		.time_cont_center_two div{
 			float: right;
@@ -850,12 +879,15 @@ margin-left: 1.5rem;
  		}
  		.annm dd .dd_top {
  			padding-bottom: 1rem;
- 			line-height: 1.8rem;
+ 			
 
  		}
  		.annm dd .dd_top p,span{
  			font-size: 10px;
- 			color: #666;
+ 			line-height: 1.8rem;
+
+
+ 		 
 
  		}
  		.ann dd .dd_top p{
@@ -940,6 +972,7 @@ margin-left: 1.5rem;
  			overflow: hidden;
  			text-overflow:ellipsis;
  			white-space: nowrap; 
+ 			line-height: 1.8rem;
 
 
 
