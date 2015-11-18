@@ -270,6 +270,7 @@ html {
 	padding-left: 5px;
 	font-size: 18px;
 	font-weight: bold;
+	color: #666;
 
 }
 /*.sizeiph span img {
@@ -379,6 +380,7 @@ position: absolute;
 .content_box2 span {
 	display: block;
 	line-height: 4rem;
+	color: #666;
 }
 .content_box2 ul li {
 	position: relative;
@@ -438,27 +440,33 @@ position: absolute;
 	padding-left: 2rem;
 }
 .num input {
-	width: 100%;
-	margin-top: -2px;
+	width: 97%;
+	margin-top: 1px;
+	height: 1.5rem;
 	text-align: center;
 }
 .num span {
 	display: block;
 	text-align: center;
-	line-height: 25px;
+	 
 	border-radius: 4px;
+	line-height: 1.8rem;
 }
 .jian {
-	width: 29px;
-	height: 25px;
+	width: 2rem;
+	height: 2rem;
 	background: #999999;
 	color: #fff;
+	
+	 
 }
 .jia {
-	width: 29px;
-	height: 25px;
+	width: 2rem;
+	height: 2rem;
 	background: #FD365F;
 	color: #fff;
+
+	 
 }
 
 .btn {
