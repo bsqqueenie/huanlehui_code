@@ -390,7 +390,6 @@ position: absolute;
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1;
 }
 .num {
 	width: 20%;
@@ -800,27 +799,32 @@ margin-left: 1.5rem;
  		}
  		.ann dd .dd_top h3
  		{
- 			line-height: 4rem;
+ 			line-height: 2.5rem;
  			overflow: hidden;
  			text-overflow: ellipsis; 
  			white-space: nowrap; 
+ 			font-weight: bold;
+ 			color: #666;
  		}
  		.ann dd .dd_top {
- 			padding-bottom: 1rem;
+ 			padding-bottom: .5rem;
+
 
  		}
  		.ann dd .dd_top p span{
  			font-size: 10px;
+ 			color: #666;
  		}
  		.ann dd .dd_bottom{
  			background-color: #f3f3f3;
- 			padding:1rem;
+ 			padding:.5rem;
 			margin-bottom: 1rem;
  		
  		}
 
  		.ann dd .dd_bottom p{
  			color: #aeaeae;
+ 			line-height: 1.8rem;
 
  		}
  		.ann dd .dd_bottom span{
@@ -840,14 +844,23 @@ margin-left: 1.5rem;
  		}
  		.annm dd .dd_top h3
  		{
- 			line-height: 3.5rem;
+ 			line-height: 2.3rem;
+ 			color: #666;
+ 			font-weight: bold;
  		}
  		.annm dd .dd_top {
  			padding-bottom: 1rem;
+ 			line-height: 1.8rem;
 
  		}
  		.annm dd .dd_top p,span{
  			font-size: 10px;
+ 			color: #666;
+
+ 		}
+ 		.ann dd .dd_top p{
+ 			line-height: 1.8rem;
+ 			color: #666;
  		}
 
  		.annm dd .dd_bottom{
@@ -922,11 +935,14 @@ margin-left: 1.5rem;
  			right: 1rem;
  			top: 12%;
  		}
- 		.time_cont_center_one p
+ 		.time_cont_center_one
  		{
  			overflow: hidden;
  			text-overflow:ellipsis;
- 			white-space: nowrap;
+ 			white-space: nowrap; 
+
+
+
  		}
   @import #outime h2{color: #fff; font-size: 16px; text-align: center; line-height: 4rem;position: absolute; left: 33%;}
     	em {
