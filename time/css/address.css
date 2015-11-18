@@ -89,8 +89,9 @@ html {
 .header #left {
 	position: absolute;
 	left: 1rem;
-
 	top: 1rem;
+	width: 1.2rem;
+	height: 2.2rem;
 }
 /*middle*/
 .no_address{
@@ -124,20 +125,34 @@ html {
 	width: 90%;
 	margin: auto;
 	height: 1px;
-	margin-top: 0.7rem;
+/*	margin-top: 0.7rem;*/
 }
 #name{
 	margin-left: 5%;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	margin-right: 5%;
+	display: inline-block;
 
 }
+
+.name{
+	padding-left: 5%;
+	font-size: 1.8rem;
+	padding-right: 5%;
+	display: inline-block;
+	box-sizing:border-box;
+
+}
+
 input{
-	width: 50%;
-	height: 4rem;
-	border: none;
-	font-size: 2rem;
-	color:grey;
+    width: 50%;
+    height: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    color: grey;
+    background: transparent;
+    line-height: 1rem;
+    margin-left: 5%;
 	
 
 
@@ -160,6 +175,7 @@ input{
 	height: 3rem;
 	display: -webkit-box;
 	margin-top: .5rem;
+
 }
 .num input {
 	width: 68%;
