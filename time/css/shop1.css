@@ -47,6 +47,7 @@
 }
 body,
 html {
+	font-family: "微软雅黑";
 	width: 100%;
 	height: 100%;
 	font-size: 62.5%;
@@ -104,7 +105,7 @@ html {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	color: white;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 /*.calcu p {
 	line-height:1.5rem;
@@ -181,9 +182,9 @@ html {
 
 .progress_bar{
 	width: 100%;
-	height: 12px;	
-	background: #B3B3B3;
-	border-radius:5px;	
+	height: 8px;	
+	background: #f3f3f3;
+	border-radius:2px;	
 	overflow: hidden;
 }
 .progress_bar_one{
@@ -211,6 +212,7 @@ html {
 }
 .xuanpiao p {
     line-height: 30px;
+
 }
 .attend p{
 	width: 100%;
@@ -268,7 +270,7 @@ html {
 }
 .sizeiph span {
 	padding-left: 5px;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #666;
 
@@ -295,7 +297,7 @@ position: absolute;
 	margin: 1px 0.8px;*/
     position: absolute;
     left: 60px;
-    top: 29%;
+    top: 35%;
     width: 76%;
     overflow: hidden; 
     text-overflow: ellipsis; 
@@ -329,19 +331,19 @@ position: absolute;
 	width: 100%;
 	display: -webkit-box;
 	-webkit-box-pack: justify;
-	font-size: 10px;
+	font-size: 11px;
 }
 .content_box1 .cont_box_one {
 	width: 100%;
 	display: -webkit-box;
-	font-size: 10px;
+	font-size: 11px;
 }
 .cont_box_one p span {
-	font-size: 10px;
+	 
 	color: #aaa;
 }
 .cont_box_one .spanone{
-	font-size: 10px;
+	font-size: 13px;
 	color: #aaa;
 	padding-right: 2rem;
 }
@@ -386,7 +388,7 @@ position: absolute;
 	position: relative;
 	display: -webkit-box;
 	-webkit-box-pack: justify;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #d9d9d9;
 	padding: 0 5px;
 }
 .box2_con img {
@@ -397,6 +399,7 @@ position: absolute;
 }
 .spc {
 	padding-right: 2.5rem;
+
 }
 /*.footer {
 	width: 100%;
@@ -441,16 +444,15 @@ position: absolute;
 }
 .num input {
 	width: 97%;
-	margin-top: 1px;
+	/*margin-top: 1px;*/
 	height: 1.5rem;
 	text-align: center;
 }
 .num span {
 	display: block;
-	text-align: center;
-	 
+	text-align: center;	 
 	border-radius: 4px;
-	line-height: 1.8rem;
+	line-height: 2rem;
 }
 .jian {
 	width: 2rem;
@@ -767,8 +769,9 @@ margin-left: 1.5rem;
 		.time_cont_center_two p{
 			float: left;
 			line-height: 3.3rem;
-			width:60%;
+			width:45%;
 			padding-left: 27px;
+			font-size: 13px;
 		}
 		.time_cont_center_two div{
 			float: right;
@@ -798,7 +801,7 @@ margin-left: 1.5rem;
 			height: 97%;
 			float: right;
 			color: #1a1a1a;
-			border-bottom: 2px solid #e62222;
+			border-bottom: 2px solid #fd3760;
 			text-align: center;
 			line-height: 3.5rem;
 		}
@@ -891,7 +894,7 @@ margin-left: 1.5rem;
 
  		}
  		.annm dd .dd_top p,span{
- 			font-size: 10px;
+ 			font-size: 13px;
  			line-height: 1.8rem;
 
 

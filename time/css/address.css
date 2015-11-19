@@ -50,8 +50,9 @@
 
 body,
 html {
-	background: #f4f4f4;
+	background: #f8f8f8;
 	font-size: 62.5%;
+
 }
 .container {
 	overflow-x: hidden;
@@ -75,7 +76,7 @@ html {
 	text-align: center;
 	font-size: 1.9rem;
 	font-weight: bold;
-	margin-bottom:1rem;
+	 
 }
 
 
@@ -115,13 +116,13 @@ html {
     width: 100%;
     margin-bottom: 1rem;
 
-    border-top: solid 1px #c8c7cc;
-    border-bottom: solid 1px #c8c7cc;
+    border-top: solid 1px #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
 	background:white;
 
 }
 .line{
-	background: #c8c7cc;
+	background: #d9d9d9;
 	width: 90%;
 	margin: auto;
 	height: 1px;
