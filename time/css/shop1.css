@@ -78,7 +78,7 @@ html {
 	left: 42%;
 	top: .7rem;
 	line-height: 1.5rem;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 .header img {
@@ -118,7 +118,7 @@ html {
     width: 286px;
     line-height: 1.5rem;
     margin-left: .5rem;
-    font-size: 13px;
+    font-size: 1.3rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -128,7 +128,7 @@ html {
 		line-height: 1.5rem;
 	margin-left: .5rem;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 .banner {
@@ -245,7 +245,7 @@ html {
 }
 .cent li span{
 	 	color: black;
- 	font-size: 16px;
+ 	font-size: 1.6rem;
  	font-weight: bold;
 }
 .cent li p{
@@ -270,7 +270,7 @@ html {
 }
 .sizeiph span {
 	padding-left: 5px;
-	font-size: 15px;
+	font-size: 15rem;
 	font-weight: bold;
 	color: #666;
 
@@ -331,44 +331,44 @@ position: absolute;
 	width: 100%;
 	display: -webkit-box;
 	-webkit-box-pack: justify;
-	font-size: 11px;
+	font-size: 1.1rem;
 }
 .content_box1 .cont_box_one {
 	width: 100%;
 	display: -webkit-box;
-	font-size: 11px;
+	font-size: 1.1rem;
 }
 .cont_box_one p span {
 	 
 	color: #aaa;
 }
 .cont_box_one .spanone{
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #aaa;
 	padding-right: 2rem;
 }
 .cont_box_one p {
-	font-size: 10px;
+	font-size: 1rem;
 	color: #aaa;
 	padding: 5px;
 }
 .cont_box_one .onep {
-	font-size: 10px;
+	font-size: 1rem;
 	color: #aaa;
 	padding: 5px 0 0 0;
 	width: 75%
 }
 .cont_box p span {
-	font-size: 10px;
+	font-size: 1rem;
 	color: #aaa;
 }
 .cont_box .spanone{
-	font-size: 10px;
+	font-size: 1rem;
 	color: #aaa;
 	padding-right: 2rem;
 }
 .cont_box p {
-	font-size: 10px;
+	font-size: 1rem;
 	color: #aaa;
 	padding: 0 5px;
 }
@@ -475,7 +475,7 @@ position: absolute;
     width: 9rem;
     height: 3rem;
     color: #fff;
-    font-size: 16px;;
+    font-size: 1.6rem;;
     text-align: center;
     background: #fd3760;
     border-radius: 4px;
@@ -503,7 +503,7 @@ position: absolute;
 margin-left: 1.5rem;
 	font-weight: bold;
 	color: #000000;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 
@@ -515,7 +515,7 @@ margin-left: 1.5rem;
     }
     .swiper-slide {
         text-align: center;
-        font-size: 18px;
+        font-size: 1.8rem;
         background: #fff;
  	width: 100%;
         /* Center slide text vertically */
@@ -601,7 +601,7 @@ margin-left: 1.5rem;
     width: 100%;
     height: auto;
     line-height: 3rem;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #666666;
     }
     .monkey_btn{
@@ -614,7 +614,7 @@ margin-left: 1.5rem;
     	width: 35%;
     	height: 3rem;
     	color: white;
-    	font-size: 16px;
+    	font-size: 1.6rem;
     	line-height: 3rem;
     	border-radius: 5px;
     	text-align: center;
@@ -658,7 +658,7 @@ margin-left: 1.5rem;
 	}
 	.deng dl dt
 	{
-	    font-size: 17px;
+	    font-size: 1.7rem;
     color: #909090;
 	}
 	.deng dl dd input{
@@ -667,7 +667,7 @@ margin-left: 1.5rem;
     border-bottom: 2px solid #e0e0e0;
     color: #e0e0e0;
     line-height: 18px;
-    font-size: 16px;
+    font-size: 1.6rem;
 	}
 	.dlbtn{
     background-color: #fd3760;
@@ -681,7 +681,7 @@ margin-left: 1.5rem;
     border-radius: 5px;
 	}
 	.dlbtn span{
-	    font-size: 20px;
+	    font-size: 2rem;
     	line-height: 3rem;
 	}
 	.jiaru{
@@ -689,7 +689,7 @@ margin-left: 1.5rem;
 		width: 100%;
 		text-align: center;
 		line-height: 3rem;
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 		#time-1 {
 
@@ -710,7 +710,7 @@ margin-left: 1.5rem;
     	 
     	#time-2 p:first-child{
 			color: #fff;
-			font-size: 16px;
+			font-size: 1.6rem;
 			padding: 9px 16px;
 		}
 		.time_cont_center{
@@ -771,7 +771,7 @@ margin-left: 1.5rem;
 			line-height: 3.3rem;
 			width:45%;
 			padding-left: 27px;
-			font-size: 13px;
+			font-size: 1.3rem;
 		}
 		.time_cont_center_two div{
 			float: right;
@@ -852,7 +852,7 @@ margin-left: 1.5rem;
 
  		}
  		.ann dd .dd_top p span{
- 			font-size: 10px;
+ 			font-size: 1rem;
  			color: #666;
  		}
  		.ann dd .dd_bottom{
@@ -868,7 +868,7 @@ margin-left: 1.5rem;
 
  		}
  		.ann dd .dd_bottom span{
- 			font-size: 10px;
+ 			font-size: 1rem;
  		}
  		
  		
@@ -894,7 +894,7 @@ margin-left: 1.5rem;
 
  		}
  		.annm dd .dd_top p,span{
- 			font-size: 13px;
+ 			font-size: 1rem;
  			line-height: 1.8rem;
 
 
@@ -938,7 +938,7 @@ margin-left: 1.5rem;
  		}
  		p{
  		
- 			font-size: 12px;
+ 			font-size: 1.2rem;
  		}
  		.seal{
  			width: 8rem;
@@ -962,7 +962,7 @@ margin-left: 1.5rem;
  			right: 0;
  			top: 3.6rem;
  			color: white;
- 			font-size: 14px;
+ 			font-size: 1.4rem;
  			text-align: center;
  			line-height: 2.5rem;
  		}
@@ -988,7 +988,7 @@ margin-left: 1.5rem;
 
 
  		}
-  @import #outime h2{color: #fff; font-size: 16px; text-align: center; line-height: 4rem;position: absolute; left: 33%;}
+  @import #outime h2{color: #fff; font-size: 1.6rem; text-align: center; line-height: 4rem;position: absolute; left: 33%;}
     	em {
     		display: none;
     		padding-left: 5px;
