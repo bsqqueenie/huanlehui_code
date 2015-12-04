@@ -270,7 +270,7 @@ html {
 }
 .sizeiph span {
 	padding-left: 5px;
-	font-size: 15rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color: #666;
 
@@ -988,7 +988,7 @@ margin-left: 1.5rem;
 
 
  		}
-  @import #outime h2{color: #fff; font-size: 1.6rem; text-align: center; line-height: 4rem;position: absolute; left: 33%;}
+  @import #outime h2{color: #fff; font-size: 16px; text-align: center; line-height: 4rem;position: absolute; left: 33%;}
     	em {
     		display: none;
     		padding-left: 5px;
